@@ -92,7 +92,7 @@ def check():
 clean = "\n"
 cleanconsole = clean*1000
 
-print("This Tic Tac Toe game was made for the Developer Test of Untangledmedia")
+print("Borislav's Python Tic Tac Toe game for the Untangledmedia's Developer Test")
 input("Press Enter to play..")
 print("Let's play!")
 time.sleep(2)

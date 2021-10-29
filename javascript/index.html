@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta http-equiv="X-UA-Compatible" content="IE=7">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+   <title>Borislav's TTT for Untangledmedia</title>
+
+   <!-- Load Tailwind CSS -->
+   <link rel="stylesheet" href="https://cdn.blazingdev.xyz/tailwind.min.css">
+
+   <!-- Load Fontawesome Icons -->
+   <link rel="stylesheet" href="https://cdn.blazingdev.xyz/fontawesome/css/all.min.css">
+
+   <!-- Load Font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+   <!-- Custom CSS -->
+   <style>
+      .signika { font-family: 'Signika', Arial, Helvetica, sans-serif !important; }
+      .display { display: block; }
+      .hide { display: none; }
+      .cursor { cursor: url(./24x24.png), auto !important; }
+      .cursor-none { cursor: none !important; }
+      .playerX { color: rgb(110, 231, 183); }
+      .playerO { color: rgb(147, 197, 253); }
+   </style>
+
+   <!-- Load the Game Script -->
+   <script src="./index.js"></script>
+</head>
+<body class="signika bg-gray-700 text-white h-full w-full cursor">
+   <!-- Wrapper -->
+   <div class="flex flex-col items-center container p-4 mx-auto mt-32">
+      <!-- Title -->
+      <span class="font-black text-4xl">
+         Borislav's JavaScript Tic Tac Toe game for the Untangledmedia's Developer Test
+      </span>
+
+      <!-- Turn Indicator -->
+      <div class="display text-2xl mt-4 mb-8">
+         Player <span class="player playerX">X</span>'s turn
+      </div>
+
+      <!-- Game Table -->
+      <section class="grid grid-cols-3 max-w-xs bg-gray-800">
+         <div class="h-24 w-24 flex cursor-none hover:bg-gray-500 border border-gray-900 transition duration-200 transform hover:scale-105 justify-center items-center text-6xl tile"></div>
+         <div class="h-24 w-24 flex cursor-none hover:bg-gray-500 border border-gray-900 transition duration-200 transform hover:scale-105 justify-center items-center text-6xl tile"></div>
+         <div class="h-24 w-24 flex cursor-none hover:bg-gray-500 border border-gray-900 transition duration-200 transform hover:scale-105 justify-center items-center text-6xl tile"></div>
+         <div class="h-24 w-24 flex cursor-none hover:bg-gray-500 border border-gray-900 transition duration-200 transform hover:scale-105 justify-center items-center text-6xl tile"></div>
+         <div class="h-24 w-24 flex cursor-none hover:bg-gray-500 border border-gray-900 transition duration-200 transform hover:scale-105 justify-center items-center text-6xl tile"></div>
+         <div class="h-24 w-24 flex cursor-none hover:bg-gray-500 border border-gray-900 transition duration-200 transform hover:scale-105 justify-center items-center text-6xl tile"></div>
+         <div class="h-24 w-24 flex cursor-none hover:bg-gray-500 border border-gray-900 transition duration-200 transform hover:scale-105 justify-center items-center text-6xl tile"></div>
+         <div class="h-24 w-24 flex cursor-none hover:bg-gray-500 border border-gray-900 transition duration-200 transform hover:scale-105 justify-center items-center text-6xl tile"></div>
+         <div class="h-24 w-24 flex cursor-none hover:bg-gray-500 border border-gray-900 transition duration-200 transform hover:scale-105 justify-center items-center text-6xl tile"></div>
+      </section>
+
+      <!-- Announcer -->
+      <section class="display announcer hide text-2xl mt-4 font-bold"></section>
+         
+      <!-- Buttons -->
+      <div class="flex space-x-4 mt-8">
+         <section class="controls">
+            <button class="py-2 px-4 bg-red-600 hover:bg-red-400 rounded-2xl text-xl transition duration-200 cursor-none transform hover:scale-105" id="reset">
+               <i class="fas fa-undo-alt"></i> Reset
+            </button>
+         </section>
+
+         <a href="https://github.com/lanoow/untangledmedia-test" class="py-2 px-4 bg-black hover:bg-gray-800 rounded-2xl text-xl transition duration-200 cursor-none transform hover:scale-105">
+            View on <span class="mx-1 font-bold"><i class="fab fa-github"></i> GitHub</span>
+         </a>
+      </div>
+   </div>
+</body>
+</html>
